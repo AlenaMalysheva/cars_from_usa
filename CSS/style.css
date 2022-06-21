@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* !!!!!*/
+}
+body{
+    font-family: 'Oswald', sans-serif;/*Ссылка с google-fonts подключает шрифты*/
+    font-size: 18px;
+    line-height: 27px; /*Высота строки*/
+    font-weight: 300;
+    color: #2C2B2B;
+
+}
+
+.container{
+ max-width: 1220px;/*Ширина 1200 и если страницу откроют на меньшем экране,то чтобы не было скрола*/
+ margin-left: auto;/*разместить по центру*/
+ margin-right: auto;
+ padding: 0 10px;/*когда пользователь откроет на телефоне чтобы контент не был прибит к левому краю 
+ и что бы падинг не отнимал пространство у заданой ширины, добавляем + 20 px к ширине*/
+}
+
+.header{
+ background-image: url(../img/icons/header_background.jpg) ; /*background шапки это картинка*/
+ background-size: no-repeat; /*что бы картинка не дублировалась из-за разницы в размере картинки и экрана*/
+ background-size: cover;/*Растянуть картинку по ширине экрана*/
+ background-position: top center; /*Раположение  фона */
+ min-height: 700px; /*Фиксируем и задаем высоту при изменении размера экрана*/
+ color: #fff;/*цвет всего текста в header*/
+}
+
